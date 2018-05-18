@@ -1,0 +1,5 @@
+npm 安装第三方模块
+nvm 安装nodejs
+  nvm ls
+  nvm ls-remote
+  nvm alias default v8.11.1  指定默认banb   
