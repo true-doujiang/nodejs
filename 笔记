@@ -27,8 +27,8 @@ npm init 这个命令的作用就是帮我们互动式地生成一份最简单�
 
 这时我们来安装依赖，这次的应用，我们依赖 express 和 utility 两个模块。
 
-$ npm install express utility --save
-
+$ npm install express@4.10.2 utility --save   可以指定要安装的版本
+ 
 这次的安装命令与上节课的命令有两点不同，一是没有指定 registry，没有指定的情况下，默认从 npm 官方安装，上次我们是从淘宝的源安装的。
 二是多了个 --save 参数，这个参数的作用，就是会在你安装依赖的同时，自动把这些依赖写入 package.json。命令执行完成之后，查看 package.json，
 会发现多了一个 dependencies 字段
