@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>51牧码人——http://www.51mmr.net 专注[前端+Java],人才培养</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+    </style>
+    <script>
+
+    /**
+        注意： 
+        1. ES6里面class没有提升功能，在ES5，用函数模拟可以，默认函数提升
+        2. ES6里面this 比之前轻松多了
+
+
+        矫正this:
+            1. fn.call(this指向谁, args1, args2....)
+            2. fn.apply(this指向谁, [args1, args2....])
+            3. fn.bind()
+    */
+        //Uncaught ReferenceError: Person is not defined
+        let p1 = new Person(); 
+        console.log(p1);
+
+
+        class Person{
+            constructor(){
+                this.name ='aaa';
+            }
+        }
+
+        //函数是有提升功能的
+        /* function Person(){
+
+        } */
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

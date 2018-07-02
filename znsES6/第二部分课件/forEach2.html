@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>51牧码人——http://www.51mmr.net 专注[前端+Java],人才培养</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+    </style>
+    <script>
+        let arr = ['apple','banana','orange','tomato'];
+
+        arr.forEach(function(val, index, arr){
+            //此时this是forEach的第二个参数
+            console.log(this, val, index, arr);
+        },123);
+
+
+        arr.forEach(function(val, index, arr){
+            //此时this是window
+            console.log(this, val, index, arr);
+        });
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
