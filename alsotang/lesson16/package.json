@@ -1,0 +1,17 @@
+{
+  "name": "lesson16",
+  "version": "1.0.0",
+  "description": "cookie && session ",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "youhh",
+  "license": "ISC",
+  "dependencies": {
+    "connect-redis": "^3.3.3",
+    "cookie-parser": "^1.4.3",
+    "express": "^4.9.5",
+    "express-session": "^1.15.6"
+  }
+}
